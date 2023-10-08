@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: #ffc107;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.button {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.input {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.form_input {
+    flex: 1;
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+/* efecto al pasar el mouse sobre el botón, crece 1.2  */
+.button:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos especificos a "botón "primary" pero conserva propiedades del botón general "padre" */
+.button--primary {
+    background-color: #6c5ce7;
+}
+
+/* Estilos especificos a "botón "secundary" que se crean automaticamente en la celda "acciones"*/
+.button--secundary {
+    background-color: #ffc107;
+}
+
+/* Estilos especificos a "botón "terciary" que se crean automaticamente en la celda "acciones"*/
+.button--terciary {
+    background-color: #dc3545;
+    color: #f0f0f0;
+}
+
+.presentdatos {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.table_header, .table_body td {
+    border: 1px solid #cccccc;
+    padding: 5px;
+}
+
+.table_header {
+    background-color: #d0f9fa;
+}
+
+/* Estilos para el tercer elemento de la tablebody lo que serán los botones de la celda "acciones" */
+.table_body td:nth-child(3){
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.section--1 {
+    background-color: #F0F0F0;
+    margin: 10px 10px;
+    border-radius: 10px;
+}
+
+.section--2 {
+    background-color: #F0F0F0;
+    margin: 10px 10px;
+    border-radius: 10px;
+}

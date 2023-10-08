@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="body">
+
+    <header class="header">
+        <nav>
+            <h1>Mis Páginas Favoritas.</h1>
+            <ul>
+                <li><a href="#">Enlace 1</a></li>
+                <li><a href="#">Enlace 2</a></li>
+                <li><a href="#">Enlace 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <h3>A veces las cosas no funcionan, el mundo es el lugar de las experiencias. </h3>
+        <section class="section--1">
+
+            <form id="formulario" class="formulario">
+                <input type="text" placeholder="Nombre de la Página" id="nameinput" class="form_input">
+
+                <input type="text" placeholder="URL de la Página" id="nombreurlinput" class="form_input">
+
+                <select id="form_input" class="form_input">
+                    <option value="Diario">Diario</option>
+                    <option value="eCommerce">eCommerce</option>
+                    <option value="Finanza">Finanza</option>
+                    <option value="Informatica">Informática</option>
+                    <option value="Juego">Juego</option>
+                    <option value="Revista">Revista</option>
+                    <option value="Otra">Otra</option>
+                </select>
+                <button type="submit" id="submitbutton" class="button button--primary">Agregar</button>
+            </form>
+
+        </section>
+
+        <section class="section--2">
+
+            <table class="presentdatos">
+                <thead>
+                    <tr>
+                        <th class="table_header">Nombre de la Página</th>
+                        <th class="table_header">URL de la Página</th>
+                        <th class="table_header">Categoría</th>
+                        <th class="table_header">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tablebody" class="table_body">
+                </tbody>
+
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Información del pie de página.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
